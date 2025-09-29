@@ -217,7 +217,7 @@ def install_dependencies_colab(is_colab, root_dir):
     pipi('webdataset')
     progress_bar.update(2)
     pipi('open_clip_torch')
-    pipi('opencv-contrib-python==4.5.5.64')
+    pipi('opencv-contrib-python')
     progress_bar.update(2)
     subprocess.run(['python','-m','pip','-q','uninstall','torchtext','-y'])
     subprocess.run(['python','-m','pip','-q','install','pandas','matplotlib'])
